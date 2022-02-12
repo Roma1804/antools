@@ -1,6 +1,7 @@
 body{
   font-family: 'Poppins', sans-serif;
   background-color: #1E252B;
+  
 }
 
 .header {
@@ -10,7 +11,7 @@ body{
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   font-weight: 600;
   padding-top: 38px;
@@ -23,6 +24,7 @@ body{
   align-items: center;
   font-size: 16px;
   font-weight: 500;
+
 }
 
 .nav li {
@@ -32,6 +34,7 @@ margin-left: 15px;
 .nav li a{
   text-decoration:none;
   color: rgb(241, 245, 245);
+  font-weight: 500;
 }
 
 .nav_btn{
@@ -40,18 +43,15 @@ margin-left: 15px;
   padding: 10px 15px;
   color: white;
   border: none;
-  font-weight: 700;
+  font-weight: 600;
 }
 
-/* . nav{
-  display:flex;
-  align-items: center;
-  text-decoration: none;
-} */
+
 
 .logo_img,.logo_text{
 vertical-align:middle;
 display:inline-block;
+
 }
 
 .div header{
@@ -67,6 +67,7 @@ display:inline-block;
   width: 38px;
   border-radius: 8px;
   background: #FF6E30;
+  margin-left: 30px;
 }
 
 .logo_text{
@@ -87,6 +88,8 @@ display:inline-block;
   font-size: 50px;
   line-height: 140%;
   color: white;
+  margin-top: 178px;
+  margin-left: 111px;
 }
 
 .container p {
@@ -94,12 +97,7 @@ display:inline-block;
   font-size: 18px;
   line-height: 30px;
   display: inline-block;
-}
-
-.big_logo {
-  width: 589px;
-  height: 892px;
-  padding-left: 650px;
+  margin-left: 111px;
 }
 
 .search-block {
@@ -110,6 +108,8 @@ display:inline-block;
   padding: 0 11px 0 21px;
   background: #283036;
   border-radius: 15px;
+  margin-left: 111px;
+  margin-top: 60px;
 }
 
 .search-icon {
@@ -141,3 +141,29 @@ display:inline-block;
   border: 0;
   cursor: pointer;
 }
+
+.social-networks{
+  padding-top:573px ;
+  width: 58px;
+  height: 58px;
+ display: inline-block;
+ 
+}
+
+.networks-logo{
+
+}
+
+.big_logo {
+ padding-left: 140px;
+ padding-top: 132px;
+
+}
+
+.page{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
