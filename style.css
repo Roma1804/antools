@@ -1,4 +1,4 @@
-body{
+body {
   font-family: 'Poppins', sans-serif;
   background-color: #1E252B;
   
@@ -27,19 +27,20 @@ body{
 
 }
 
+/* Обращаемся к элементам только по классу. Дай li класс и обращайся по нему */
 .nav li {
-margin-left: 15px;
-
+  margin-left: 15px;
 }
 
-.nav li a{
+/* Тоже самое что и сверху. Так же избегай вложенности, максимум 2 уровня */
+.nav li a {
   text-decoration:none;
   color: rgb(241, 245, 245);
   font-weight: 500;
   width: 431px;
 }
 
-.nav_btn{
+.nav_btn {
   background-color: #FF6E30;
   border-radius: 8px;
   padding: 10px 15px;
@@ -49,12 +50,10 @@ margin-left: 15px;
   cursor: pointer;
 }
 
-
-
-.logo_img,.logo_text{
+/* Избегай написания селекторов через комму. vertical-align не работает, его применяют только к таблицам. Вместо inline-block используй display: flex для родительского элемента */
+.logo_img, .logo_text{
 vertical-align:middle;
 display:inline-block;
-
 }
 
 .div header{
@@ -73,6 +72,7 @@ display:inline-block;
   margin-left: 30px;
 }
 
+/* Тексту логотипа не нужно давать ширину */
 .logo_text{
   font-size: 22px;
   color:rgb(236, 236, 236);
@@ -84,6 +84,8 @@ display:inline-block;
   padding-left: 111px;
 }
 
+/* У h1 должен быть свой класс, по нему и обращайся */
+/* margin-left - не нужен здесь, у тебя отступ уже задан в контейнере */
 .container h1 {
   width: 600px;
   height: 140px;
@@ -99,6 +101,7 @@ display:inline-block;
   color: #FF6E30;
 }
 
+/* margin-left - не нужен здесь, у тебя отступ уже задан в контейнере */
 .container p {
   color: white;
   font-size: 18px;
@@ -107,6 +110,7 @@ display:inline-block;
   margin-left: 111px;
 }
 
+/* margin-left - не нужен здесь, у тебя отступ уже задан в контейнере */
 .search-block {
   display: flex;
   align-items: center;
@@ -149,6 +153,7 @@ display:inline-block;
   cursor: pointer;
 }
 
+/* Свойство display желательно чтобы шло первым в списке правил */
 .social-networks{
   height: 58px;
   width: 58px;
@@ -156,23 +161,21 @@ display:inline-block;
   display: flex;
 }
 
+/* padding-left - не нужен здесь, у тебя отступ уже задан в контейнере */
 .container-networks{
   padding-top: 110px;
   padding-left: 111px;
- 
-
 }
 
+/* padding-left - не нужен здесь, у родительского элемента уже задан justify-content: space-between */
 .big_logo {
  padding-left: 140px;
  padding-top: 132px;
-
 }
 
 .page{
   display: flex;
   justify-content: space-between;
-  
 }
 
 
