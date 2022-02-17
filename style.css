@@ -143,14 +143,15 @@ display:inline-block;
 }
 
 .social-networks{
-  padding-top:573px ;
-  width: 58px;
   height: 58px;
- display: inline-block;
- 
+  width: 58px;
+  border-radius: 8px;
 }
 
-.networks-logo{
+.container-networks{
+  padding-top:642px ;
+  padding-left: 111px;
+  display: inline-block;
 
 }
 
