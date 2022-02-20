@@ -15,41 +15,29 @@
 
 <body>
     <header>
-        <!-- Зачем еще один элемент с классом header? -->
         <div class="header">
-            <!-- В названиях классов цифры не желательны, и слово header написано неправильно. Боллее подходяший класс - logo  -->
-            <a class="heder2">
-                <!-- В названиях классов нижнее подчеркивание не используется, только в методологии БЭМ, но к ней мы дойдём позже. Поменяй во всех названиях классов _ на -. Пример: logo-image -->
-                <!-- Group 159.png - дай всем изображениям осмысленные названия. Пример: logo.png -->
-                <!-- Формат файла для лого сделай .svg или оставь .png, но выгрузи его в большем расширении -->
-                <img class="logo_img" src="./img/Group 159.png" alt="">
-                <span class="logo_text">antools.</span>
-            </a>
+            <div class="antools">
+                <img class="logo-img" src="./img/Group 159.png" alt="">
+                <span class="logo-text">antools.</span>
+            </div>
             <nav>
                 <ul class="nav">
-                    <li><a href="">Home</a> </li>
-                    <li><a href="">Categories</a> <img src="/img/Vector.svg" alt=""></li>
-                    <li><a href="">My Collections</a> </li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Categories</a> <img src="/img/Vector.svg" alt=""></li>
+                    <li><a href="#">My Collections</a> </li>
+                    <li><a href="#">Blog</a> </li>
                 </ul>
-
             </nav>
-            <!-- Тега nav2 не существует в спецификации HTML, и в целом у тебя в нем находятся две кнопки которые не являются навигацией. Достаточно просто <div> -->
-            <nav2>
-                <ul class="nav">
-                    <!-- Что за </button> в строчке ниже? -->
-                    <li><a href="#">Login</a></button></li>
-                    <li><button class="nav_btn" type="button">Sign Up</button></li>
-                </ul>
-            </nav2>
+            <ul class="nav">
+                <li><a href="#">Login</a></button></li>
+                <li><button class="nav-btn" type="button">Sign Up</button></li>
+            </ul>
         </div>
     </header>
 
 
     <main>
-        <!-- Дай осмысленное название класса секции. Пример: preview-section -->
-        <section class="page">
-            <!-- У тебя слихком большой отступ слева, ты дал отступ койнтейнеру и вложенным в него элементам -->
+        <section class="preview-section">
             <div class="container">
                 <!-- Тег <br> мы никогда не используем. Для переноса строки используй свойство max-width -->
                 <h1>Awesome tools for <br>
@@ -62,31 +50,22 @@
                     <button class="button">Search</button>
                 </div>
 
-                <!-- Для того что бы обернуть иконки ниже, достаточно одного тега <div>  -->
-                <div class="container-networks">
-                    <div class="social-networks">
-                        <!-- Иконки должны быть не тегом <img>, а <span> или <i> с заданым свойством background-image. Тип изображения должен быть .svg -->
-                        <a href="#"> <img src="./img/facebook.png" alt="facebook"></a>
-                        <a href="#"> <img src="./img/instagram.png" alt="instagram"></a>
-                        <a href="#"><img src="./img/tweeter.png" alt="tweeter"></a>
+                <div class="social-networks">
+                    <!-- Иконки должны быть не тегом <img>, а <span> или <i> с заданым свойством background-image. Тип изображения должен быть .svg -->
+                    <a href="#"> <img src="./img/facebook.png" alt="facebook"></a>
+                    <a href="#"> <img src="./img/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="./img/tweeter.png" alt="tweeter"></a>
 
-                    </div>
                 </div>
             </div>
-            <!-- Это не лого, а просто декоративное изображение, название класса будет вводить в заблуждение. Переименуй на другой -->
-            <div class="big_logo">
-                <!-- Этот обёрточный <div> не нужен, он не выполняет никакой роли -->
-                <div class="illustration">
-                    <img src="./img/Illustration.svg" alt="">
-                </div>
+            <div class="decorative-img">
+                <img src="./img/Illustration.svg" alt="">
             </div>
 
         </section>
 
     </main>
 
-    <!-- Что это за </div>? -->
-    </div>
 </body>
 
 </html>

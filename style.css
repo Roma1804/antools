@@ -5,6 +5,7 @@ body {
 }
 
 .header {
+  display: flex;
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
@@ -29,7 +30,7 @@ body {
 
 /* Обращаемся к элементам только по классу. Дай li класс и обращайся по нему */
 .nav li {
-  margin-left: 15px;
+  margin-left: 41px;
 }
 
 /* Тоже самое что и сверху. Так же избегай вложенности, максимум 2 уровня */
@@ -40,7 +41,7 @@ body {
   width: 431px;
 }
 
-.nav_btn {
+.nav-btn {
   background-color: #FF6E30;
   border-radius: 8px;
   padding: 10px 15px;
@@ -50,34 +51,28 @@ body {
   cursor: pointer;
 }
 
-/* Избегай написания селекторов через комму. vertical-align не работает, его применяют только к таблицам. Вместо inline-block используй display: flex для родительского элемента */
-.logo_img, .logo_text{
-vertical-align:middle;
-display:inline-block;
-}
-
 .div header{
   width: 50%;
-  font-size: 0;
   margin-bottom: 20px;
   vertical-align: top;
-  display: inline-block;
+  
+}
+.antools{
+
 }
 
-.logo_img {
+.logo-img {
   height: 38px;
   width: 38px;
   border-radius: 8px;
-  background: #FF6E30;
-  margin-left: 30px;
+  padding-right: 12px;
 }
 
-/* Тексту логотипа не нужно давать ширину */
-.logo_text{
+.logo-text{
   font-size: 22px;
   color:rgb(236, 236, 236);
-  width: 90px;
-  text-align: center;
+  
+  
 }
 
 .container {
@@ -85,7 +80,6 @@ display:inline-block;
 }
 
 /* У h1 должен быть свой класс, по нему и обращайся */
-/* margin-left - не нужен здесь, у тебя отступ уже задан в контейнере */
 .container h1 {
   width: 600px;
   height: 140px;
@@ -94,23 +88,21 @@ display:inline-block;
   line-height: 140%;
   color: white;
   margin-top: 178px;
-  margin-left: 111px;
+  
 }
  
 .dot{
   color: #FF6E30;
 }
 
-/* margin-left - не нужен здесь, у тебя отступ уже задан в контейнере */
 .container p {
   color: white;
   font-size: 18px;
   line-height: 30px;
   display: inline-block;
-  margin-left: 111px;
+  
 }
 
-/* margin-left - не нужен здесь, у тебя отступ уже задан в контейнере */
 .search-block {
   display: flex;
   align-items: center;
@@ -119,7 +111,7 @@ display:inline-block;
   padding: 0 11px 0 21px;
   background: #283036;
   border-radius: 15px;
-  margin-left: 111px;
+  
   margin-top: 60px;
 }
 
@@ -153,27 +145,19 @@ display:inline-block;
   cursor: pointer;
 }
 
-/* Свойство display желательно чтобы шло первым в списке правил */
 .social-networks{
+  display: flex;
   height: 58px;
   width: 58px;
   border-radius: 8px;
-  display: flex;
-}
-
-/* padding-left - не нужен здесь, у тебя отступ уже задан в контейнере */
-.container-networks{
   padding-top: 110px;
-  padding-left: 111px;
 }
 
-/* padding-left - не нужен здесь, у родительского элемента уже задан justify-content: space-between */
-.big_logo {
- padding-left: 140px;
+.decorative-img {
  padding-top: 132px;
 }
 
-.page{
+.preview-section{
   display: flex;
   justify-content: space-between;
 }
