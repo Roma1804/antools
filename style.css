@@ -58,7 +58,8 @@ body {
   
 }
 .antools{
-
+display: flex;
+align-items: center;
 }
 
 .logo-img {
@@ -81,7 +82,7 @@ body {
 
 /* У h1 должен быть свой класс, по нему и обращайся */
 .container h1 {
-  width: 600px;
+  max-width: 600px;
   height: 140px;
   font-weight: 500;
   font-size: 50px;
@@ -100,6 +101,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   display: inline-block;
+  max-width: 490px;
   
 }
 
@@ -155,6 +157,8 @@ body {
 
 .decorative-img {
  padding-top: 132px;
+ display: flex;
+ align-items: flex-end;
 }
 
 .preview-section{
@@ -162,4 +166,41 @@ body {
   justify-content: space-between;
 }
 
+@media( max-width:1020px) {
+  .header{
+    max-width: 960px;
+    padding-left: 115px;
+  }
+  .container h1{
+font-size: 40px;
+  }
+.search-block{
+  width: 400px;
+}
+  }
 
+
+@media(max-width:1246px){
+.container h1{
+font-size: 45px;
+}
+  }
+
+
+  @media(max-width:804px){
+    .header{
+      font-weight: 500;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1200px;
+    }
+  }
+
+
+  @media(max-width:800px){
+  .header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+  }
+  }
